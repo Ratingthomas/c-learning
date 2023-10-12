@@ -1,2 +1,2 @@
-# Learing-c
+# Learning-c
  
