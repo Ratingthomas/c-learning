@@ -3,4 +3,7 @@ project(1_6_3 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(1_6_3 main.c)
+add_executable(1_6_3 main.c functions.c functions.h
+        thomas.h
+        thomas.c
+)
