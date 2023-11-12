@@ -17,7 +17,11 @@ void fill_array(int array[], int size, int min, int max){
 /// @param size The size of the array (i.e., number of elements).
 void print_array(int array[], int size){
     for (int i = 0; i < size; ++i) {
-        printf("%3d", array[i]);
+        if(size - 1 == i){
+            printf("%3d", array[i]);
+        } else{
+            printf("%3d ,", array[i]);
+        }
     }
 }
 

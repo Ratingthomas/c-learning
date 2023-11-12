@@ -56,7 +56,7 @@ int main() {
         char operator = read_operator();
 
         float result = apply_operator(num1, num2, operator);
-        printf("%.4f \n", result);
+        printf("%.4f %d %.4f = %.4f \n", num1, operator, num2, result);
     }
 
     return 0;

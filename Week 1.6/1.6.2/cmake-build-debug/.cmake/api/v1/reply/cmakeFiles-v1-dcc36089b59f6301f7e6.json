@@ -50,6 +50,21 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeFindCodeBlocks.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/ProcessorCount.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
 			"path" : "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.26/Modules/CMakeCInformation.cmake"
 		},
 		{
@@ -106,8 +121,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/thomaslevels/Documents/Development/C/Week 1.4/1.4.3/cmake-build-debug",
-		"source" : "/Users/thomaslevels/Documents/Development/C/Week 1.4/1.4.3"
+		"build" : "/Users/thomaslevels/Documents/Development/C/Week 1.6/1.6.2/cmake-build-debug",
+		"source" : "/Users/thomaslevels/Documents/Development/C/Week 1.6/1.6.2"
 	},
 	"version" : 
 	{

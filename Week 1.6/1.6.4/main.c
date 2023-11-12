@@ -25,7 +25,7 @@ int main() {
 
     int current_date_amount = day_in_year(current_date);
     int birth_day = day_in_year(date);
-    printf("%d", difference(current_date_amount, birth_day, current_date, date));
+    printf("Your age in days is: %d", difference(current_date_amount, birth_day, current_date, date));
 
     return 0;
 }

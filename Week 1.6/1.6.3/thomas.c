@@ -12,11 +12,11 @@ void read_date(int array[]){
 }
 
 bool leap_year(int year){
-    if(year % 4 == 0){
-        return true;
-    } else{
-        return false;
-    }
+    bool divisible_by_4 = year % 4 == 0;    // check if year is divisible by 4
+    bool divisible_by_100 = year % 100 == 0;    // check if year is divisible by 100
+    bool divisible_by_400 = year % 400 == 0;    // check if year is divisible by 400
+    bool leap_year = divisible_by_4 && (!divisible_by_100 || divisible_by_400); // check if year is a leap year
+    return leap_year;
 }
 
 int number_of_days(int month, int year){
@@ -42,7 +42,7 @@ int number_of_days(int month, int year){
 }
 
 bool check_date(int array[]){
-    if(array[0] < 0 || array[1] < 0 || array[2] < 0){
+    if(array[0] <= 0 || array[1] <= 0 || array[2] <= 0){
         return false;
     }
 

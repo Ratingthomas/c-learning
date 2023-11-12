@@ -12,11 +12,11 @@ void read_date(int array[]){
 }
 
 bool leap_year(int year){
-    if(year % 4 == 0){
-        return true;
-    } else{
-        return false;
-    }
+    bool divisible_by_4 = year % 4 == 0;    // check if year is divisible by 4
+    bool divisible_by_100 = year % 100 == 0;    // check if year is divisible by 100
+    bool divisible_by_400 = year % 400 == 0;    // check if year is divisible by 400
+    bool leap_year = divisible_by_4 && (!divisible_by_100 || divisible_by_400); // check if year is a leap year
+    return leap_year;
 }
 
 int number_of_days(int month, int year){
@@ -68,7 +68,13 @@ int day_in_year(int date[]){
 }
 
 int difference(int current_date_amount, int birth_day, int current_date[], int date[]){
-    int year_difference = (current_date[2] - date[2]) * 365;
+    int dates_in_year = 365;
+
+    if(leap_year(date[2])){
+        dates_in_year = 366;
+    }
+
+    int year_difference = (current_date[2] - date[2]) * dates_in_year;
     int days_difference = (current_date_amount - birth_day);
 
     return year_difference + days_difference;
