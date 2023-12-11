@@ -4,37 +4,59 @@
 #include "string.h"
 
 int main() {
-    int klinker_amount = 0;
-    int medeklinker_amount = 0;
-    int nummers_amount = 0;
+    bool loop = true;
 
-    char input[80];
+    while (loop){
+        int klinker_amount = 0;
+        int medeklinker_amount = 0;
+        int nummers_amount = 0;
 
-    char klinkers[5] = {'a', 'e', 'i', 'o', 'u'};
-    char numbers[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+        char input[128];
 
-    char * inputText = read_string("Please enter a sentence: ");
-    strncpy(input, inputText, 80);
+        char klinkers[5] = {'a', 'e', 'i', 'o', 'u'};
+        char numbers[10] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
 
-    for (int i = 0; i < 80; ++i) {
-        printf("%c", input[i]);
+        char * inputText = read_string("Please enter a sentence: ");
+        strncpy(input, inputText, 128);
 
-        for (int j = 0; j < 26; ++j) {
-            bool medeklinker_found = false;
-
-
+        if(input[0] == '\0'){
+            loop = false;
+            printf("Bye!");
         }
 
-        for (int j = 0; j < 10; ++j) {
-            if(input[i] == numbers[j]){
-                nummers_amount = nummers_amount + 1;
+        if(loop){
+            for (int i = 0; i < 128; ++i) {
+                if(input[i] != '\0'){
+                    if(isalpha(input[i])){
+                        bool klinker_found = false;
+
+                        for (int j = 0; j < 5; ++j) {
+                            if(klinkers[j] == tolower(input[i])){
+                                klinker_found = true;
+                            }
+                        }
+
+                        if(klinker_found){
+                            klinker_amount++;
+                        } else{
+                            medeklinker_amount++;
+                        }
+                    }
+
+                    for (int j = 0; j < 10; ++j) {
+                        if(input[i] == numbers[j]){
+                            nummers_amount = nummers_amount + 1;
+                        }
+                    }
+                }
             }
+
+            printf("Klinkers: %d", klinker_amount);
+            printf("\nMedeklinkers: %d", medeklinker_amount);
+            printf("\nNummers: %d \n", nummers_amount);
         }
 
     }
 
-    printf("\nKlinkers: %d", klinker_amount);
-    printf("\nMedeklinkers: %d", medeklinker_amount);
-    printf("\nNummers: %d", nummers_amount);
     return 0;
 }

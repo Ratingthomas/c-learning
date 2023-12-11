@@ -3,50 +3,45 @@
 #include "ctype.h"
 #include "string.h"
 
-char character(char alphabet[], char input, int shifted, bool next){
-    int index = 0;
+void encrypt(char * string, bool encoded, int shifted){
+    char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    for (int j = 0; j < 52; ++j) {
-        if(alphabet[j] == input){
-            index = j;
+    for (int i = 0; i < 128; ++i) {
+        int index = 0;
+
+        if(string[i] != '\n' && isalpha(string[i])){
+            for (int j = 0; j < 52; ++j) {
+                if(string[i] == letters[j]){
+                    index = j;
+                    if(index == 51){
+                        index = 0;
+                    }
+                }
+            }
+            if(encoded){
+                string[i] = letters[index + shifted];
+            } else{
+                string[i] = letters[index - shifted];
+            }
         }
+
+        shifted++;
     }
 
-    if(next == true){
-        if(index == 51){
-            index = -1 + shifted;
-        } else{
-            index = index + shifted;
-        }
-    }
-
-
-    return alphabet[index];
 }
 
 int main() {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
     char * sentence = read_string("Please enter a sentence: ");
     int shifted = 1;
 
     char input[128];
-    char encoded[128];
-    char decoded[128];
 
     strncpy(input, sentence, 128);
 
-    for (int i = 0; i < 128; ++i) {
-        if(isalpha(input[i])){
-            char new = character(alphabet, input[i], shifted, true);
-            shifted = shifted + 1;
-            encoded[i] = new;
-        } else{
-            encoded[i] = input[i];
-        }
-    }
+    encrypt(input, true, shifted);
+    printf("Encrypted text: %s\n", input);
+    encrypt(input, false, 1);
 
-    printf("Encoded sentence: %s \n", encoded);
-    printf("Decoded sentence: %s", decoded);
+    printf("Decoded sentence: %s", input);
     return 0;
 }

@@ -31,7 +31,6 @@ int main() {
 
     while (loop){
         char string[128];
-        int count = 0;
 
         char * user_input = read_string("Please enter a sentence:");
         strncpy(string, user_input, 128);
@@ -40,23 +39,20 @@ int main() {
             loop = false;
         } else{
             if(is_valid_sentence(user_input)){
-                for (int i = 0; i < 128; ++i) {
-                    if(string[i] != '\0'){
-                        count++;
+                unsigned long length = strlen(user_input);
+
+                if(length > highest_num){
+                    highest_num = length;
+                    strcpy(longest, user_input);
+                    if(lowest_num == 0){
+                        lowest_num = length;
+                        strcpy(longest, user_input);
                     }
+                } else if(length < lowest_num){
+                    lowest_num = length;
+                    strcpy(shortest, user_input);
                 }
 
-                if(highest_num < count){
-                    highest_num = count;
-                    for (int i = 0; i < 128; ++i) {
-                        longest[i] = string[i];
-                    }
-                } else if(lowest_num < count) {
-                    lowest_num = count;
-                    for (int i = 0; i < 128; ++i) {
-                        shortest[i] = string[i];
-                    }
-                }
             } else{
                 printf("Invalid input! \n");
             }
@@ -64,23 +60,8 @@ int main() {
         }
     }
 
-    printf("The longest sentence is: ");
-
-    for (int i = 0; i < 128; ++i) {
-        if(longest[i] != '\0'){
-            printf("%c", longest[i]);
-        }
-
-    }
-
-    printf("\nThe shortest sentence is: ");
-
-    for (int i = 0; i < 128; ++i) {
-        if(shortest[i] != '\0'){
-            printf("%c", shortest[i]);
-        }
-
-    }
+    printf("The shortest sentence is: %s\n", longest);
+    printf("The longest sentence is: %s", shortest);
 
     return 0;
 }
