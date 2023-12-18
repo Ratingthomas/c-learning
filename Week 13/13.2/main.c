@@ -8,18 +8,21 @@
 /// @returns the number of words in the sentence
 int count_words(const char *sentence){
     int count = 0;
-    int ispunct_count = 0;
 
     for (int i = 0; i < 128; ++i) {
-        if(ispunct(sentence[i])){
-            ispunct_count++;
-        } else{
-            ispunct_count = 0;
-        }
-        if(isspace(sentence[i]) && ispunct_count < 1) {
+        if (isalpha(*sentence)) {
+            while (isalpha(*sentence) || ispunct(*sentence)) {
+                sentence++;
+            }
             count++;
-            ispunct_count = 0;
         }
+        else if (isnumber(*sentence)) {
+            while (isnumber(*sentence)) {
+                sentence++;
+            }
+            count++;
+        }
+        else sentence++;
     }
 
     return count;
@@ -35,7 +38,6 @@ int main() {
         strncpy(sentence, read_string("Enter a line of text: "), 128);
     }
 
-
-
+    printf("Exiting program. Have a nice day!");
     return 0;
 }
