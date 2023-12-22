@@ -21,16 +21,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60213c77-1d6b-4219-9a6f-f3fafaa7ad22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/13.3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/functions.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../13.3/functions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/13.4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-56142c31a522b1cfe567.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-dc6bfc4114922a99ce5e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-22T10-16-04-0920.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.cmake/api/v1/reply/target-13_4-Debug-117e55d5fafaa57a506d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/13_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/13_4.dir/functions.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/13_4.dir/main.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/functions.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13.4/functions.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/14.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/query/cache-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/cache-v2-3224ed121963754fa583.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-ca01a7a707d4055fbd3d.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-a66a0e8ee5e9f4a82ba0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-22T10-21-36-0771.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/target-14_1-Debug-f80f7b83a9fc22bd302e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-e0f424cc4383644d699f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/14_1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/14_1.dir/functions.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/14_1.dir/main.c.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/3.26.4/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/3.26.4/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/3.26.4/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdC/CMakeCCompilerId.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/build.ninja" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/functions.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.1/functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/cmake-build-debug/13_1" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/cmake-build-debug/13_1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/cmake-build-debug/CMakeFiles/13_1.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/cmake-build-debug/CMakeFiles/13_1.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.1/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../13.1/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.3/cmake-build-debug/.cmake/api/v1/reply/index-2023-12-18T09-57-02-0689.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.3/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../13.3/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.3/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../13.3/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.3/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../13.3/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../13.3/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../13.3/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +164,7 @@
       <workItem from="1702466757383" duration="1350000" />
       <workItem from="1702891886027" duration="1303000" />
       <workItem from="1702893350113" duration="7000" />
+      <workItem from="1703242936642" duration="41000" />
     </task>
     <servers />
   </component>

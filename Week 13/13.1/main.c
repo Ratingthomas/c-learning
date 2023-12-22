@@ -11,6 +11,7 @@ void remove_whitespace(char *string){
             for (int j = i; j < 128; ++j) {
                 string[j] = string[j+1];
             }
+            i = i - 1;
         }
     }
 
