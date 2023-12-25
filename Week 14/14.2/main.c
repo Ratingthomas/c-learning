@@ -8,6 +8,9 @@ typedef struct {
     int blue;
 } colors_t;
 
+// Read a color as a int from a user.
+// @param prompt The message to display.
+// @return void
 int read_color(const char *prompt){
     printf("%s", prompt);
     int color;
@@ -15,14 +18,29 @@ int read_color(const char *prompt){
     return color;
 }
 
+// Print the hex color
+// @param color The color struct
+// @return void
 void print_color(const colors_t *color){
     printf("The color is: #%02x%02x%02x", color->blue, color->green, color->red);
 }
 
-colors_t increase(const colors_t *color){
+// Increase hex color
+// @param color The color struct
+// @return void
+void increase(colors_t *color){
+    color->blue = round(color->blue / 0.7);
+    color->green = round(color->green / 0.7);
+    color->red = round(color->red / 0.7);
+}
 
-
-    return *color;
+// Decrease hex color
+// @param color The color struct
+// @return void
+void decrease(colors_t *color){
+    color->blue = round(color->blue * 0.7);
+    color->green = round(color->green * 0.7);
+    color->red = round(color->red * 0.7);
 }
 
 int main() {
@@ -34,17 +52,20 @@ int main() {
 
     print_color(&colors);
 
-    char action = read_char("Do you want to increase (i) or decrease (d) the brightness (q to quit) ? ");
+    char action = read_char("\nDo you want to increase (i) or decrease (d) the brightness (q to quit) ? ");
 
     while (action != 'q'){
         if(action == 'i'){
-            colors = increase(&colors);
+            increase(&colors);
+            print_color(&colors);
+        }
+        else if(action == 'd'){
+            decrease(&colors);
             print_color(&colors);
         }
 
-        action = read_char("Do you want to increase (i) or decrease (d) the brightness (q to quit) ? ");
+        action = read_char("\nDo you want to increase (i) or decrease (d) the brightness (q to quit) ? ");
     }
-
 
     return 0;
 }
