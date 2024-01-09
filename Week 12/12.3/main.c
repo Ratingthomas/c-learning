@@ -9,7 +9,7 @@ void sort_two_strings(const char ** a, const char ** b){
     int return_value = strcmp(a, b);
 
     if(return_value > 0){
-        char * tmp;
+        char * tmp = NULL;
         strncpy(tmp, a, 128);
         strncpy(a, b, 128);
         strncpy(b, tmp, 128);
@@ -22,6 +22,10 @@ int main() {
     strncpy(data[0], read_string("First: "), 128);
     strncpy(data[1], read_string("Second: "), 128);
     strncpy(data[2], read_string("Third: "), 128);
+
+    const char *ptr1 = data[0];
+    const char *ptr2 = data[1];
+    const char *ptr3 = data[2];
 
     sort_two_strings(data[0], data[1]);
     sort_two_strings(data[1], data[2]);

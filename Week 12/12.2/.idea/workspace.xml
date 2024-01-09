@@ -21,7 +21,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b365303-d5fd-4abe-ab0d-1693d17cdd42" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/.idea/14.4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/cmake-build-debug/14_4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/functions.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Week 14/14.4/functions.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 13/13.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 13/13.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 13/13.1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 13/13.1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 14/14.1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 14/14.1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 14/14.1/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Week 14/14.2/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Week 14/14.2/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +112,7 @@
       <workItem from="1702469763021" duration="43000" />
       <workItem from="1702647256881" duration="69000" />
       <workItem from="1702654924276" duration="47000" />
+      <workItem from="1704803596597" duration="72000" />
     </task>
     <servers />
   </component>

@@ -38,7 +38,7 @@ int main() {
 
     double distance_int = distance(&coord_1, &coord_2);
 
-    printf("The distance between (%d, %d) and (%d, %d) is %f", coord_1.x, coord_1.y, coord_2.x, coord_2.y, distance_int);
+    printf("The distance between (%d, %d) and (%d, %d) is %.2f", coord_1.x, coord_1.y, coord_2.x, coord_2.y, distance_int);
 
     return 0;
 }
