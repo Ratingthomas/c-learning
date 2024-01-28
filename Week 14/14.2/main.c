@@ -30,8 +30,17 @@ void print_color(const colors_t *color){
 // @return void
 void increase(colors_t *color){
     color->blue = round(color->blue / 0.7);
+    if(color->blue > 255){
+        color->blue = 255;
+    }
     color->green = round(color->green / 0.7);
+    if(color->green > 255){
+        color->green = 255;
+    }
     color->red = round(color->red / 0.7);
+    if(color->red > 255){
+        color->red = 255;
+    }
 }
 
 // Decrease hex color

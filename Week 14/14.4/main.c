@@ -56,6 +56,7 @@ int count_students_with_grade(const student_t students[static 1], int count, res
 
 int main() {
     student_t students[20];
+    int count = 0;
 
     bool loop = true;
 
@@ -82,14 +83,14 @@ int main() {
                 result_t grade_result = OUTSTANDING;
                 students[i].grade = grade_result;
             }
+
+            count++;
         }
     }
 
     printf("Grades:\n");
-    for (int i = 0; i < 20; ++i) {
-        if(strcmp(students[i].name, "") != 0){
-            print_student(&students[i]);
-        }
+    for (int i = 0; i < count; ++i) {
+        print_student(&students[i]);
     }
 
 

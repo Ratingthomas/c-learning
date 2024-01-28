@@ -6,9 +6,9 @@
 /// Removes all whitespace and punctuation from the given string.
 /// @param string the string to remove whitespace and punctuation from
 void remove_whitespace(char *string){
-    for (int i = 0; i < 128; ++i) {
+    for (int i = 0; string[i] != '\0'; ++i) {
         if(isspace(string[i])){
-            for (int j = i; j < 128; ++j) {
+            for (int j = i; string[j] != '\0'; ++j) {
                 string[j] = string[j+1];
             }
             i = i - 1;

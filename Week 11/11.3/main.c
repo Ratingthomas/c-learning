@@ -60,8 +60,10 @@ int main() {
         }
     }
 
-    printf("The shortest sentence is: %s\n", longest);
-    printf("The longest sentence is: %s", shortest);
+    if (highest_num > 0) {
+        printf("The shortest sentence is: %s\n", longest);
+        printf("The longest sentence is: %s", shortest);
+    }
 
     return 0;
 }

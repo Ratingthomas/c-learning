@@ -70,7 +70,6 @@ int main() {
     point_t min = {0,0};
     point_t max = {50,50};
 
-
     point_t lower_left = {50, 50};
     point_t upper_right = {0, 0};
 

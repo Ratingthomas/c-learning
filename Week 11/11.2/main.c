@@ -6,22 +6,25 @@
 void encrypt(char * string, bool encoded, int shifted){
     char letters[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    for (int i = 0; i < 128; ++i) {
+    for (int i = 0; string[i] != '\0'; ++i) {
         int index = 0;
 
         if(string[i] != '\n' && isalpha(string[i])){
             for (int j = 0; j < 52; ++j) {
                 if(string[i] == letters[j]){
                     index = j;
-                    if(index == 51){
-                        index = 0;
-                    }
+
                 }
             }
             if(encoded){
-                string[i] = letters[index + shifted];
+                index = (index + shifted) % 52;
+                string[i] = letters[index];
             } else{
-                string[i] = letters[index - shifted];
+                index = index - shifted;
+                while(index < 0){
+                    index = index + 52;
+                }
+                string[i] = letters[index];
             }
         }
 

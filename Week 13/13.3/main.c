@@ -10,7 +10,7 @@
 void count_characters(const char *string, int counts[static 26]){
     for (int i = 0; i < 128; ++i) {
         if(string[i] != '\0' && isalpha(string[i])){
-            counts[string[i] - 'a']++;
+            counts[tolower(string[i]) - 'a']++;
         }
     }
 }
